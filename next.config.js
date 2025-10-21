@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  basePath: "/estela-paniagua",
+  assetPrefix: "/estela-paniagua/",
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -11,6 +13,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
